@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:src/misc/myColors.dart';
 import 'package:src/pages/armed.dart';
 
 class TimerWidget extends StatefulWidget {
@@ -49,8 +50,8 @@ class _TimerWidgetState extends State<TimerWidget> {
     final seconds = strDigits(myDuration.inSeconds.remainder(60));
     return Text(
       '$hours:$minutes:$seconds',
-      style: TextStyle(
-          fontWeight: FontWeight.bold, color: Colors.black, fontSize: 70),
+      style: const TextStyle(
+          fontWeight: FontWeight.bold, color: MyColors.orange, fontSize: 70),
     );
   }
 }
